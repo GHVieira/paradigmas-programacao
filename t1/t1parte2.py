@@ -21,3 +21,4 @@ def procura_letra(l1):
  #5 - O código abaixo é escrito em Python imperativo. Escreva um código equivalente usando programação funcional.
  	def dobra_valor(l1):
  		return list(map(lambda x: x*2, l1))
+
