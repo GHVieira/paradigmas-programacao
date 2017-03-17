@@ -1,6 +1,5 @@
 #1 - Defina uma função somaQuad(x,y) que calcule a soma dos quadrados de dois números x e y.
 def somaQuad(x,y):
-	
 	x = pow(x,2)
 	y = pow(y,2)
 
@@ -61,14 +60,14 @@ def par(l1):
 	return list(filter(par_aux, l1))
 
 
-#9 - Crie uma função charFound(c,s) que verifique se o caracter c está contido na string. O resultado deve ser True ou False. Você não deve usar o operador in. Defina uma função auxiliar para ajudar neste exercício.
-def charFound_aux(c, s):
-
+#9 - Crie uma função charFound(c,s) que verifique se o caracter c está contido na string. O resultado deve ser True ou False. Você não deve usar o operador in. Defina uma função auxiliar para ajudar neste exercício.	
 def charFound(c, s):
-	
-	return 
-	
-	
+	def charFound_aux(x):
+		return c == x
+
+	return filter(charFound_aux, s)
+
+
 #10 - Escreva uma função que receba uma lista de strings e retorne uma nova lista com adição de marcações HTML (p.ex.: <B> e </B>) antes e depois de cada string
 def add_marcadores_aux(string):
 	return "<B>" + l1 + "</B>"
