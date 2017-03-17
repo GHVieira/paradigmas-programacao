@@ -74,3 +74,4 @@ def add_marcadores_aux(string):
 
 def add_marcadores_aux(lista_string):
 	return list(map(add_marcadores_aux, lista_string))
+
