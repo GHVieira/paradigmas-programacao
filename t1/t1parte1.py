@@ -73,4 +73,4 @@ def add_marcadores_aux(string):
 	return "<B>" + l1 + "</B>"
 
 def add_marcadores_aux(lista_string):
-	return list(map(add_marcadores_aux, lista_string))
+	return list(map(add_marcadores_aux, lista_string)) 
