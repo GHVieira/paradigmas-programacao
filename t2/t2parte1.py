@@ -46,7 +46,8 @@ def myZip(l1, l2):
 
 #8 - Escreva uma função enumerate(words) que numere cada palavra da lista recebida.
 def enumerate(words):
-    return [(x, y) for x in range(1,len(words+1)) for y in words ]
+    return [(x, y) for x in range(1,len(words)) for y in words]
+
 
 #9 - Escreva uma função isBin(s) que verifique se a string recebida representa um número binário. 
 def isBin(s):
