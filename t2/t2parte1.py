@@ -19,6 +19,6 @@ def addSufix(suf, nomes):
 
 #8 - Escreva uma função enumerate(words) que numere cada palavra da lista recebida.
 
-#9 - Escreva uma função isBin(s) que verifique se a string recebida representa um número binário.
+#9 - Escreva uma função isBin(s) que verifique se a string recebida representa um número binário. 
 
 #10 - Escreva uma função bin2dec(digits), que receba uma lista de dígitos representando um número binário e retorne seu equivalente em decimal.
