@@ -37,16 +37,13 @@ def genCode(s):
 
 
 #7 - Defina uma função myZip(l1,l2) que reproduza o comportamento da função zip do Python.
-def auxlen(l1,l2):
-    return len(l1) if len(l1)<len(l2) else len(l2)
-
 def myZip(l1, l2):
-    return [(l1[x],l2[x]) for x in range(auxlen(l1,l2))]
+    return [(l1[x],l2[x]) for x in range(min(len(l1),len(l2)))]
 
 
 #8 - Escreva uma função enumerate(words) que numere cada palavra da lista recebida.
 def enumerate(words):
-    return [(x, y) for x in range(1,len(words)) for y in words]
+    return [(x+1, words[x]) for x in range(len(words))]
 
 
 #9 - Escreva uma função isBin(s) que verifique se a string recebida representa um número binário. 
