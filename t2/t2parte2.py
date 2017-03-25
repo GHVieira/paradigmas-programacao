@@ -30,14 +30,14 @@ def writeFile(fname, contents):
    f.write(contents)
    f.close()	
 
-#def genStyles(n, r, g, b):
-#    return [ "fill:rgb(%s, %s, %s)" % (r), (g), (b) for x in range (n) ]
+#def genStyles():
+#return ["fill:rgb(%s, %s, %s)" % (45,n,30) for n in range(1,140,10)]
 
 def main():
    maxWidth = 1000
    maxHeight = 100
    rects = genRects(10,50,50)
-   styles = ["fill:rgb(0,140,0)","fill:rgb(140,0,0)"]
+   styles = genStyles()
    rectstyles = applyStyles(rects, styles)
    writeFile("mycolors.svg", svgImage(maxWidth, maxHeight, rectstyles))
    
