@@ -30,8 +30,8 @@ def writeFile(fname, contents):
    f.write(contents)
    f.close()	
 
-#def genStyles():
-#return ["fill:rgb(%s, %s, %s)" % (45,n,30) for n in range(1,140,10)]
+def genStyles():
+return ["fill:rgb(%s, %s, %s)" % (45,n,30) for n in range(0,140,10)]
 
 def main():
    maxWidth = 1000
