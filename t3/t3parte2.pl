@@ -13,6 +13,10 @@ hasEqHeads(L1,L2) :- [H|T] = L1, [C|R] = L2, H=:=C.
 
 
 # 4 - Defina um predicado has5(L) que seja verdadeiro se L for uma lista de 5 elementos. Lembre de como funciona a unificação em Prolog e resolva este exercício sem usar o predicado pré-definido length.
+tam([], 0).
+tam([H|T], S) :- tam(T, S1), S is 1 + S1.
+
+has5(L) :- tam(L, S), S =:= 5.
 
 
 # 5 - Defina um predicado hasN(L,N) que seja verdadeiro se L for uma lista de N elementos. Agora você pode usar um predicado pré-definido.
