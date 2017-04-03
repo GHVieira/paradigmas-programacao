@@ -7,7 +7,9 @@ somaQuad(X, Y, Z) :- quad(X, Y, C), Z=:=C.
 # 2 - Defina um predicado zeroInit(L) que é verdadeiro se L for uma lista que inicia com o número 0 (zero).
 zeroInit(L) :- [H|T] = L, H =:= 0.
 
+
 # 3 - Defina um predicado hasEqHeads(L1,L2) que seja verdadeiro se as listas L1 e L2 possuírem o mesmo primeiro elemento. 
+hasEqHeads(L1,L2) :- [H|T] = L1, [C|R] = L2, H=:=C.
 
 
 # 4 - Defina um predicado has5(L) que seja verdadeiro se L for uma lista de 5 elementos. Lembre de como funciona a unificação em Prolog e resolva este exercício sem usar o predicado pré-definido length.
