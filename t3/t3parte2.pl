@@ -20,7 +20,7 @@ has5(L) :- tam(L, S), S =:= 5.
 
 
 # 5 - Defina um predicado hasN(L,N) que seja verdadeiro se L for uma lista de N elementos. Agora você pode usar um predicado pré-definido.
-
+hasN(L,N) :- tam(L, S), S=:= N.
 
 # 6 - Defina um predicado isBin(L) que seja verdadeiro se L for uma lista contendo somente elementos 0 e 1. Use recursão.
 
