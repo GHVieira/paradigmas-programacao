@@ -1,4 +1,7 @@
 # 1 - Defina um predicado somaQuad(X,Y,Q) que seja verdadeiro se Q for a soma dos quadrados de X e Y.
+quad(A,B,C) :- C is (A*A) + (B*B).
+
+somaQuad(X, Y, Z) :- quad(X, Y, C), Z=:=C.
 
 
 # 2 - Defina um predicado zeroInit(L) que é verdadeiro se L for uma lista que inicia com o número 0 (zero).
