@@ -29,6 +29,10 @@ isBin(L) :- L = [H|T], isBin(T), member(H, [0,1]).
 
 
 # 7 - Defina um predicado mesmaPosicao(A,L1,L2) para verificar se um elemento A está na mesma posição nas listas L1 e L2. Assuma que L1 e L2 sejam permutações de uma lista de elementos distintos, sem repetições. Dica: procure auxílio em predicados pré-definidos.
+encontraind(A,[A|_],0).
+encontraind(A,[_|T],I) :- encontraind(A,T,X), I is X + 1.
+
+mesmaPosicao(A,L1,L2) :- encontraind(A,L1,R), encontraind(A,L2,R1), R=:=R1.
 
 
 # 8 - Defina um predicado repete5(E,L) que seja verdadeiro se a lista L for composta por exatamente 5 repetições do elemento E. Não use recursão.
