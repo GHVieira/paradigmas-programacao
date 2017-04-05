@@ -22,6 +22,7 @@ has5(L) :- tam(L, S), S =:= 5.
 # 5 - Defina um predicado hasN(L,N) que seja verdadeiro se L for uma lista de N elementos. Agora você pode usar um predicado pré-definido.
 hasN(L,N) :- tam(L, S), S=:= N.
 
+
 # 6 - Defina um predicado isBin(L) que seja verdadeiro se L for uma lista contendo somente elementos 0 e 1. Use recursão.
 
 
@@ -29,7 +30,7 @@ hasN(L,N) :- tam(L, S), S=:= N.
 
 
 # 8 - Defina um predicado repete5(E,L) que seja verdadeiro se a lista L for composta por exatamente 5 repetições do elemento E. Não use recursão.
-
+    
 
 # 9 - Defina um predicado recursivo sumQuads(L,S) que seja verdadeiro se S for o somatório dos quadrados dos elementos da lista L.
 
