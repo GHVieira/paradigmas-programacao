@@ -24,6 +24,8 @@ hasN(L,N) :- tam(L, S), S=:= N.
 
 
 # 6 - Defina um predicado isBin(L) que seja verdadeiro se L for uma lista contendo somente elementos 0 e 1. Use recursão.
+isBin([]).
+isBin(L) :- L = [H|T], isBin(T), member(H, [0,1]).
 
 
 # 7 - Defina um predicado mesmaPosicao(A,L1,L2) para verificar se um elemento A está na mesma posição nas listas L1 e L2. Assuma que L1 e L2 sejam permutações de uma lista de elementos distintos, sem repetições. Dica: procure auxílio em predicados pré-definidos.
