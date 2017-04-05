@@ -18,7 +18,7 @@ avo(X,Z) :- pai(X,Y), pai(Y,Z).
 false.
 
 
-#Questão 2
+   #Questão 2
 
 azulejos(0,0).
 azulejos(Na,Nq) :-
@@ -68,3 +68,20 @@ A = 3                                             #Número de quadrados formados
 
 sum([],0).
 sum([H|T], S) :- sum(T, S1), S is H + S1.
+
+[trace]  ?- sum([1,2,3], A).
+   Call: (8) sum([1, 2, 3], _4870) ? creep       #Chama sum mandando a lista    
+   Call: (9) sum([2, 3], _5108) ? creep          #Chama sum mandando a tail da lista anterior
+   Call: (10) sum([3], _5108) ? creep            #Chama sum mandando a tail da lista anterior
+   Call: (11) sum([], _5108) ? creep             #Chama sum mandando lista vazia
+   Exit: (11) sum([], 0) ? creep                 #Aplica a regra de somar 0 quando for lista vazia
+   Call: (11) _5112 is 3+0 ? creep               #Soma-se H da lista, no caso 3
+   Exit: (11) 3 is 3+0 ? creep                   # A += 3
+   Exit: (10) sum([3], 3) ? creep                #Retorna para quando tail era [3] e head era [2]
+   Call: (10) _5118 is 2+3 ? creep               #Soma-se H da lista, no caso 2
+   Exit: (10) 5 is 2+3 ? creep                   # A += 2
+   Exit: (9) sum([2, 3], 5) ? creep              #Retorna para quando tail era [2,3] e head era [1]
+   Call: (9) _4870 is 1+5 ? creep                #Soma-se H da lista, no caso 1
+   Exit: (9) 6 is 1+5 ? creep                    # A += 1
+   Exit: (8) sum([1, 2, 3], 6) ? creep           #Retorna para quando tail era [1,2,3] e head era [], A finaliza com valor 6
+A = 6.                                           #A = 6
