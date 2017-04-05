@@ -3,7 +3,7 @@
 pai(roberto,joao).
 pai(joao, jose).
 pai(roberto,julio).
-pai(julio,marcos).
+pai (julio,marcos).
 pai(julio,mario).
 avo(X,Z) :- pai(X,Y), pai(Y,Z).
 
@@ -63,3 +63,8 @@ azulejos(Na,Nq) :-
    Exit: (8) azulejos(120, 3) ? creep             #"Volta" para quando Na era 120
 A = 3                                             #Número de quadrados formados termina em 3.
 
+
+#Questão 3
+
+sum([],0).
+sum([H|T], S) :- sum(T, S1), S is H + S1.
