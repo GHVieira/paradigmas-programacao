@@ -7,7 +7,6 @@ pai (julio,marcos).
 pai(julio,mario).
 avo(X,Z) :- pai(X,Y), pai(Y,Z).
 
-
 [trace]  ?- avo(joao, Y).
    Call: (8) avo(joao, _4852) ? creep  #Chama avô procurando um neto para João
    Call: (9) pai(joao, _5070) ? creep  #Procurando se João é pai de alguem
@@ -18,7 +17,7 @@ avo(X,Z) :- pai(X,Y), pai(Y,Z).
 false.
 
 
-   #Questão 2
+#Questão 2
 
 azulejos(0,0).
 azulejos(Na,Nq) :-
