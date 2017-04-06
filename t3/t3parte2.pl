@@ -39,8 +39,8 @@ mesmaPosicao(A,L1,L2) :- encontraind(A,L1,R), encontraind(A,L2,R1), R=:=R1.
     
 
 # 9 - Defina um predicado recursivo sumQuads(L,S) que seja verdadeiro se S for o somatório dos quadrados dos elementos da lista L.
-sum([],0).
-sum([H|T], S) :- sum(T, S1), S is H + S1.
+sumQuads([],0).
+sumQuads([H|T], S) :- sumQuads(T, S1), S is H*H + S1.
 
 
 # 10 - Defina um predicado recursivo repete(N,E,L) que seja verdadeiro se a lista L for composta por exatamente N repetições do elemento E. 
