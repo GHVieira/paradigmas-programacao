@@ -47,6 +47,10 @@ sum([H|T], S) :- sum(T, S1), S is H + S1.
 
 
 # 11 - Defina um predicado recursivo mapop(L1,L2) que seja verdadeiro se a lista L2 for formada aplicando-se a operação 2*x+1 a cada elemento x da lista L1.
+confere([], [], 0).
+confere([H|T], [C|R], S) :- confere(T, R, S1), C =:= 2*H+1, S is 1 + S1.
+
+mapop(L1,L2) :- confere(L1, L2, X), tam(L1, X1), X=:=X1.
 
 
 # 12 - Defina um predicado positivos(L1,L2), de forma que L2 seja uma lista só com os elementos positivos de L1.
