@@ -36,7 +36,7 @@ mesmaPosicao(A,L1,L2) :- encontraind(A,L1,R), encontraind(A,L2,R1), R=:=R1.
 
 
 # 8 - Defina um predicado repete5(E,L) que seja verdadeiro se a lista L for composta por exatamente 5 repetições do elemento E. Não use recursão.
-
+repete5(E, L) :- L = [E,E,E,E,E].
 
 
 # 9 - Defina um predicado recursivo sumQuads(L,S) que seja verdadeiro se S for o somatório dos quadrados dos elementos da lista L.
