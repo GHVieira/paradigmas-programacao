@@ -1,7 +1,7 @@
 # 1 - Defina um predicado somaQuad(X,Y,Q) que seja verdadeiro se Q for a soma dos quadrados de X e Y.
 quad(A,B,C) :- C is (A*A) + (B*B).
 
-somaQuad(X, Y, Z) :- quad(X, Y, C), Z=:=C.
+somaQuad(X, Y, Z) :- quad(X, Y, Z).
 
 
 # 2 - Defina um predicado zeroInit(L) que é verdadeiro se L for uma lista que inicia com o número 0 (zero).
@@ -38,6 +38,7 @@ mesmaPosicao(A,L1,L2) :- encontraind(A,L1,R), encontraind(A,L2,R1), R=:=R1.
 # 8 - Defina um predicado repete5(E,L) que seja verdadeiro se a lista L for composta por exatamente 5 repetições do elemento E. Não use recursão.
 
 
+
 # 9 - Defina um predicado recursivo sumQuads(L,S) que seja verdadeiro se S for o somatório dos quadrados dos elementos da lista L.
 sumQuads([],0).
 sumQuads([H|T], S) :- sumQuads(T, S1), S is H*H + S1.
@@ -58,3 +59,4 @@ mapop(L1,L2) :- confere(L1, L2, X), tam(L1, X1), X=:=X1.
 
 
 # 12 - Defina um predicado positivos(L1,L2), de forma que L2 seja uma lista só com os elementos positivos de L1.
+
