@@ -9,4 +9,6 @@
 #Usuário coloca número de postes e travas
 #No caso da questão 8, o primeiro valor vai se manter = 6 nas consultas
 #O valor T vai ser testado para ver se a resposta bate
-calcula_traves(P, T) :- P1 is P - 1, T1 is 3*P1,  T=:=T1. 
+
+calcula_traves(6, 15).
+calcula_traves(P, T) :- P1 is P - 1, T is 3*P1. 
