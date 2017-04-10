@@ -59,4 +59,8 @@ mapop(L1,L2) :- confere(L1, L2, X), tam(L1, X1), X=:=X1.
 
 
 # 12 - Defina um predicado positivos(L1,L2), de forma que L2 seja uma lista só com os elementos positivos de L1.
+positivos([], []).
+positivos([H|T], L) :- H<0, positivos(T,L).
+positivos([H|T], L) :- H=0, positivos(T,L).
 
+positivos([H|T], [H|R]) :- positivos(T,R).
