@@ -6,8 +6,6 @@
 using namespace std;
 
 
-//constantes de tamanho e preço (e pi)
-
 //P = 0.5   -   M = 1   -   G = 2
 // < 7      -   < 15    - 
 
