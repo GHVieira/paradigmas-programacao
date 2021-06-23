@@ -1,3 +1,3 @@
-# Paradigmas de Programação
+# ELC117 - Paradigmas de Programação
 
-Repositório para entrega de atividades da disciplina de Paradigmas de Programação
+Repositório para armazenar os códigos dos trabalhos implementados durante a disciplina.
